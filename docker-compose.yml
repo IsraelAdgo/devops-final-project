@@ -9,7 +9,7 @@ services:
   jenkins:
     image: jenkins/jenkins
     volumes:
-      - /Users/liadhazoot/hit/devops/jenkins:/var/jenkins_home
+      - /Users/liadhazoot/hit/devops/jen2:/var/jenkins_home
       - /Users/liadhazoot/hit/devops/finalProject:/home/webapps
     ports:
       - 8081:8080
