@@ -1,7 +1,18 @@
-<!doctype html>
-<h1>DEVOPS FINAL PROJECT!</h1>
-<%
-  for (int i = 0; i < 20; ++i) {
-      out.println("<p>I LOVE DEVOPS (LIAD, DVIR, LIZ, ZIV)</p>");
-  }
-%>
+<html>
+<head><title>First JSP</title></head>
+<body>
+  <%
+    double num = Math.random();
+    if (num > 0.95) {
+  %>
+      <h2>You'll have a luck day!</h2><p>(<%= num %>)</p>
+  <%
+    } else {
+  %>
+      <h2>Well, life goes on ... </h2><p>(<%= num %>)</p>
+  <%
+    }
+  %>
+  <a href="<%= request.getRequestURI() %>"><h3>Try Again</h3></a>
+</body>
+</html>
